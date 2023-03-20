@@ -1,7 +1,7 @@
 import math
 
 
-def kiem_tra(a, b, c):
+def kiem_tra1(a, b, c):
     if a == 0:
         nghiem = -b/a
     else:
@@ -19,4 +19,4 @@ def kiem_tra(a, b, c):
 a = int(input("Nhap a= "))
 b = int(input("Nhap b= "))
 c = int(input("Nhap c= "))
-print(kiem_tra(a, b, c))
+print(kiem_tra1(a, b, c))
