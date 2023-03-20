@@ -19,4 +19,4 @@ def kiem_tra(a, b, c):
 a = int(input("Nhap a= "))
 b = int(input("Nhap b= "))
 c = int(input("Nhap c= "))
-print(kiemtra(a, b, c))
+print(kiem_tra(a, b, c))
