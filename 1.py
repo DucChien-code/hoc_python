@@ -1,7 +1,7 @@
 import math
 
 
-def kiemtra(a, b, c):
+def kiem_tra(a, b, c):
     if a == 0:
         nghiem = -b/a
     else:
