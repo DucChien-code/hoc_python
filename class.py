@@ -34,7 +34,7 @@ class People:
 
 people1 = People(2003)
 
-age = people1.get_age
+age = people1.get_age #Bỏ ngoặc vì đã có @property
 
 print(age)
 

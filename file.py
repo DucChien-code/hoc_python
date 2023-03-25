@@ -16,4 +16,4 @@ fp1 = open("test.txt", mode="w")
 
 data = fp1.write(' - '.join(map(str,lst)))
 
-fp1.close
+fp1.close()
