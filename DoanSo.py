@@ -27,6 +27,5 @@ while True:
     d = input("Bạn có muốn tiếp tục không? (c/k)")
     if d == "k":
         break
-    continue
 
 print("GOOD BYE❤️")
