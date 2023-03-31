@@ -1,0 +1,25 @@
+cursor(factory=Cursor): Tạo và trả về một đối tượng Con trỏ. Phương thức con trỏ chấp nhận một nhà máy tham số tùy chọn duy nhất. Nếu được cung cấp, đây phải là một hàm có thể gọi trả về một thể hiện của Con trỏ hoặc các lớp con của nó.
+
+blobopen(table, column, row, /, *, readonly=False, name= "main"): Mở một điều khiển Blob cho một BLOB hiện có.
+
+commit(): Cam kết mọi giao dịch đang chờ xử lý vào cơ sở dữ liệu. Nếu không có giao dịch mở, phương pháp này là không hoạt động.
+
+rollback(): Quay trở lại điểm bắt đầu của bất kỳ giao dịch đang chờ xử lý nào. Nếu không có giao dịch mở, phương pháp này là không hoạt động.
+
+close(): Đóng kết nối cơ sở dữ liệu. Bất kỳ giao dịch đang chờ xử lý nào đều không được cam kết ngầm; đảm bảo cam kết () trước khi đóng để tránh mất các thay đổi đang chờ xử lý.
+
+execute(sql, parameters=(),/): Tạo một đối tượng Con trỏ mới và gọi hàm exec() trên nó với sql và tham số đã cho. Trả về đối tượng con trỏ mới.
+
+executemany(sql, parameters, /): Tạo một đối tượng Con trỏ mới và gọi hàm execmany() trên đó với sql và tham số đã cho. Trả về đối tượng con trỏ mới.
+
+executescript(sql_script, /): Tạo một đối tượng Con trỏ mới và gọi hàm execscript() trên đó với sql_script đã cho. Trả về đối tượng con trỏ mới.
+
+create_function(name, narg, func, *, deterministic=False): Tạo hoặc xóa một hàm SQL do người dùng định nghĩa.
+
+create_aggregate(name, /, n_arg. aggregate_class): Tạo hoặc xóa hàm tổng hợp SQL do người dùng xác định.
+
+create_window_function(name, num_params, aggregate_class, /): Tạo hoặc xóa chức năng cửa sổ tổng hợp do người dùng xác định.
+
+create_collation(name, callable): Tạo một đối chiếu có tên name bằng chức năng đối chiếu có thể gọi được. callable được chuyển qua hai đối số chuỗi và nó sẽ trả về một số nguyên:
+
+interrupt(): Gọi phương thức này từ một luồng khác để hủy bỏ bất kỳ truy vấn nào có thể đang thực thi trên kết nối. Các truy vấn bị hủy bỏ sẽ gây ra lỗi OperationalError.
